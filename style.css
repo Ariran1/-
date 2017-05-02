@@ -1,0 +1,168 @@
+.container__siteFooter {
+	background: #3a3a3a;
+	color:#fff;
+	font: 400 16px/1.6 'Pt sans';
+}
+.siteFooter {
+	width:1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.siteFooter__navUl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 45px 10px;
+	font-size: 1.4em;
+}
+.siteFooter__infoBlocks {
+	font-size: 1.5em;
+	display: flex;
+	justify-content: space-between;
+
+}
+.siteFooter__signUp {
+	padding: 10px 0;
+}
+.siteFooter__signUp-inputContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+}
+.siteFooter__signUp-input,
+.siteFooter__signUp-submit {
+	font-size: .8em;
+	border-radius: 8px;
+	border:none;
+}
+.siteFooter__signUp-input {
+	width:100%;
+	margin-right: 10px;
+	padding: 5px 15px;
+}
+.siteFooter__signUp-submit{
+	background: rgb(221,24,58);
+	color: currentColor;
+	white-space: nowrap;
+	padding: 5px 25px;
+}
+.siteFooter--header4 {
+	color: rgb(201,201,201);;
+
+}
+.siteFooter__aboutPolicy {
+	font-size: .9em;
+	border-bottom: 1px solid currentColor;
+}
+.siteFooter__paymentTypes img{
+	display: block;
+	padding:10px 10px;
+}
+.siteFooter__privacyPolicy,
+.siteFooter__paymentTypes {
+	padding: 0 10px;
+}
+
+.siteFooter__footerContentUl {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid currentColor;
+	padding: 20px 0;
+	font-size: 1.1em;
+	margin: 24px 10px 0;
+}
+.siteFooter__footerContentLi {
+	-webkit-flex-grow:5;
+	flex-grow:5;
+}
+.siteFooter__footerContentLi:nth-last-of-type(-n+2) {/*последние 2*/
+	-webkit-flex-grow:1;
+	flex-grow:1;
+	text-align: right;
+}
+@media (max-width:1200px) {
+.container__siteFooter {
+	background: #3a3a3a;
+	color:#fff;
+	font: 400 15px/1.6 'Pt sans';
+}
+.siteFooter {
+	width: 1000px;
+}
+}
+@media (max-width:1000px) {
+.container__siteFooter {
+	background: #3a3a3a;
+	color:#fff;
+	font: 400 14px/1.6 'Pt sans';
+}
+.siteFooter {
+	width: auto;
+}
+.siteFooter__navUl {
+	flex-wrap:wrap;
+	text-align: center;
+    padding: 35px 10px 30px;
+}
+.siteFooter__navLi {
+	width: 50%;
+}
+.siteFooter__infoBlocks {
+	flex-wrap:wrap;
+	justify-content: center;
+}
+.siteFooter__privacyPolicy {
+	order:2;
+}
+.siteFooter__paymentTypes {
+	order:1;
+}
+.siteFooter__privacyPolicy,
+.siteFooter__paymentTypes {
+	padding: 10px 10%;
+}
+}
+@media (max-width:600px) {
+.container__siteFooter {
+	background: #3a3a3a;
+	color:#fff;
+	font: 400 11px/1.6 'Pt sans';
+}
+.siteFooter__paymentTypes {
+    padding: 0 10% 6%;
+}
+.siteFooter__privacyPolicy p {
+	font-size: .8em;
+}
+.siteFooter__aboutPolicy {
+	display: inline-block;
+	margin-right: 9%; /*для переноста строки*/
+}
+.siteFooter__signUp-inputContainer {
+	flex-wrap:wrap;
+	justify-content: center;
+}
+.siteFooter__signUp-inputContainer > * {
+	margin: 5px 0px;
+}
+.siteFooter__signUp {
+	padding-top: 20px;
+}
+.siteFooter__footerContentUl {
+	flex-wrap: wrap;
+	justify-content: center;
+    margin: 10px 10px 0;
+}
+.siteFooter__footerContentLi:nth-of-type(1) {
+	width:100%;
+	text-align: center;
+}
+.siteFooter__footerContentLi {
+	-webkit-flex-grow:unset !important;
+	flex-grow:unset !important;
+	color:#aaa;
+}
+.siteFooter__footerContentLi:nth-last-of-type(-n+2) {
+	padding: 0 4px;
+}
+}
